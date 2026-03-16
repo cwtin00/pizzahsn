@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hsn Menü</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <img src="image/logoo.png" class="logo" alt="Logo">
+        
+    </header>
+
+    <nav class="nav-container">
+        <div class="nav-arrow left-arrow" id="scroll-left" style="display: none;"><</div>
+        
+        <div class="nav-wrapper" id="nav-wrapper">
+            <ul class="nav-list" id="menu-tabs">
+                <li class="nav-item active" data-target="pizzalar">Pizzalar</li>
+                <li class="nav-item" data-target="kucuk-boy">Küçük Boy Menüler</li>
+                <li class="nav-item" data-target="orta-boy">Orta Boy Menüler</li>
+                <li class="nav-item" data-target="buyuk-boy">Büyük Boy Menüler</li>
+                <li class="nav-item" data-target="ikili">İkili Menüler</li>
+                <li class="nav-item" data-target="citir">Çıtır Lezzetler</li>
+                <li class="nav-item" data-target="icecekler">İçecekler</li>
+            </ul>
+        </div>
+
+        <div class="nav-arrow right-arrow" id="scroll-right">></div>
+    </nav>
+
+    <main class="content-area">
+        <div class="section-banner" id="active-title">PİZZALAR</div>
+
+        <div class="product-grid" id="product-list">
+            
+            <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/classick.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>1.Classic Karışık</h3>
+                    <p class="description">Özel sos, Mozerella Peyniri, Sucuk, Sosis, Domates, Kırmızı ve Yeşil Biber, Mantar, Mısır, Zeytin</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>200 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>300 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/mantar.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>2.Mantarlı</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Bol Mantar</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>200 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>300 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/akdeniz.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>3.Akdeniz</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Domates, Kırmızı ve Yeşil Biber, Mantar, Mısır, Zeytin</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>200 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>300 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/margarita.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>4.Margarita</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>200 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>300 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/acili.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>5.Acılı</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Sucuk, Sosis, Domates, Kırmızı ve Yeşil Biber, Jalapeno Biberi, Mantar, Mısır, Zeytin</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>200 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>300 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/peynir.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>6. 4 Peynirli</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Hellim Peyniri, Cheddar Peyniri, Parmesan Peyniri</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>300 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>350 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/tonbalik.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>7.Ton Balıklı</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Karamelize Soğan, Bol Ton Balığı</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>300 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>350 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/mangalzmn.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>8.Mangal Zamanı</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Kars Kaşarı, Bol Sucuk</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>300 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>350 TL -</span></div>
+    </div>
+                </div>
+            </div>
+            
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/egeli.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>9.Egeli</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Keçi Peyniri, Domates, Yeşil Biber, Mısır, Zeytin</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>300 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>350 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/tavuklu.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>10.Tavuklu</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Tavuk Fileto, Mantar, Kırmızı Köz Biber, Mısır</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>250 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>300 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>350 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/kspecial.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>11.Karışık Special</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Kasap Sucuk, Sosis, Domates, Kırmızı ve Yeşil Biber, Mantar, Mısır, Zeytin</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>350 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>400 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>450 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/kavurmaa.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>12.Kavurmalı</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Yeşil Biber, Domates, Mor Soğan, Dana Kavurma</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>350 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>400 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>450 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/pastirma.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>13.Pastırmalı</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Antrikot Pastırma</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>350 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>400 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>450 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-cat="pizzalar" style="display: flex;">
+                <div class="product-img">
+                    <img src="image/trusulu.jpeg">
+                </div>
+                <div class="product-info">
+                    <h3>14.Türk Usulü</h3>
+                    <p class="description">Özel Sos, Mozerella Peyniri, Küp Sucuk, Pastırma</p>
+                    <div class="price-list">
+        <div class="price-item"><span>- Küçük:</span> <span>350 TL -</span></div>
+        <div class="price-item"><span>- Orta:</span> <span>400 TL -</span></div>
+        <div class="price-item"><span>- Büyük:</span> <span>450 TL -</span></div>
+    </div>
+                </div>
+            </div>
+
+<div class="product-card" data-cat="kucuk-boy">
+    <div class="menu-container-fixed">
+        <div class="menu-fixed-header">KÜÇÜK BOY MENÜLER</div>
+        <div class="menu-fixed-body">
+            <div class="menu-fixed-item">
+                <h4>SOLO MENÜ</h4>
+                <p>Küçük Boy Pizza, Kutu Kola, Cips</p>
+                <span class="menu-fixed-price">- 300 TL -</span>
+            </div>
+            <div class="menu-fixed-item">
+                <h4>MİX MENÜ</h4>
+                <p>Küçük Boy Pizza, Kutu Kola, Cips, Soğan Halkası, Nugget</p>
+                <span class="menu-fixed-price">- 450 TL -</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-card" data-cat="orta-boy">
+    <div class="menu-container-fixed">
+        <div class="menu-fixed-header">ORTA BOY MENÜLER</div>
+        <div class="menu-fixed-body">
+            <div class="menu-fixed-item">
+                <h4>KİNG MENÜ</h4>
+                <p>Orta Boy Pizza, Kutu Kola, Cips</p>
+                <span class="menu-fixed-price">- 350 TL -</span>
+            </div>
+            <div class="menu-fixed-item">
+                <h4>MEGA MENÜ</h4>
+                <p>Orta Boy Pizza, Kutu Kola, Cips, Soğan Halkası, Nugget</p>
+                <span class="menu-fixed-price">- 500 TL -</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-card" data-cat="buyuk-boy">
+    <div class="menu-container-fixed">
+        <div class="menu-fixed-header">BÜYÜK BOY MENÜLER</div>
+        <div class="menu-fixed-body">
+            <div class="menu-fixed-item">
+                <h4>EXTREME MENÜ</h4>
+                <p>Büyük Boy Pizza, Kutu Kola, Cips</p>
+                <span class="menu-fixed-price">- 400 TL -</span>
+            </div>
+            <div class="menu-fixed-item">
+                <h4>SÜPER MENÜ</h4>
+                <p>Büyük Boy Pizza, Kutu Kola, Cips, Soğan Halkası, Nugget</p>
+                <span class="menu-fixed-price">- 550 TL -</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card" data-cat="ikili">
+    <div class="menu-container-fixed">
+        <div class="menu-fixed-header">İKİLİ MENÜLER</div>
+        <div class="menu-fixed-body">
+            
+            <div class="menu-fixed-item">
+                <h4>EKONOMİK MENÜ</h4>
+                <p>2 Adet Orta Boy Pizza, 1 Lt Kola</p>
+                <span class="menu-fixed-price">- 550 TL -</span>
+            </div>
+            
+            <div class="menu-fixed-item">
+                <h4>TREND MENÜ</h4>
+                <p>2 Adet Orta Boy Pizza, 1 Lt Kola, Cips, Soğan Halkası, Nugget</p>
+                <span class="menu-fixed-price">- 770 TL -</span>
+            </div>
+
+            <div class="menu-fixed-item">
+                <h4>ELİTE MENÜ</h4>
+                <p>2 Adet Büyük Boy Pizza, 1 Lt Kola, Cips, Soğan Halkası, Nugget</p>
+                <span class="menu-fixed-price">- 870 TL -</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+    <div class="product-card" data-cat="citir">
+    <div class="menu-container-fixed">
+        <div class="menu-fixed-header">ÇITIR LEZZETLER</div>
+        <div class="menu-fixed-body">
+            
+            <div class="menu-fixed-item">
+                <h4>CİPS 1 PORS.</h4>
+                <span class="menu-fixed-price">- 70 TL -</span>
+            </div>
+            
+            <div class="menu-fixed-item">
+                <h4>SOĞAN HALKASI 1 PORS.</h4>
+                <span class="menu-fixed-price">- 70 TL -</span>
+            </div>
+
+            <div class="menu-fixed-item">
+                <h4>NUGGET 1 PORS.</h4>
+                <span class="menu-fixed-price">- 80 TL -</span>
+            </div>
+
+            <div class="menu-fixed-item">
+                <h4>ÇITIR TAVUK 1 PORS.</h4>
+                <span class="menu-fixed-price">- 150 TL -</span>
+            </div>
+
+        </div>
+    </div>
+
+    
+</div>
+<div class="product-card" data-cat="icecekler" style="display: none;"> <div class="menu-container-fixed">
+        <div class="menu-fixed-header">İÇECEKLER</div>
+        <div class="menu-fixed-body" style="padding: 10px 20px;">
+            
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div class="menu-fixed-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 5px;">
+                    <h4 style="margin:0; font-size: 1.1em;">Coca Cola</h4>
+                    <span class="menu-fixed-price" style="font-size: 1.1em;">70 TL</span>
+                </div>
+                
+                <div class="menu-fixed-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 5px;">
+                    <h4 style="margin:0; font-size: 1.1em;">Fanta</h4>
+                    <span class="menu-fixed-price" style="font-size: 1.1em;">70 TL</span>
+                </div>
+
+                <div class="menu-fixed-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 5px;">
+                    <h4 style="margin:0; font-size: 1.1em;">Sprite</h4>
+                    <span class="menu-fixed-price" style="font-size: 1.1em;">70 TL</span>
+                </div>
+
+                <div class="menu-fixed-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 5px;">
+                    <h4 style="margin:0; font-size: 1.1em;">Maden Suyu</h4>
+                    <span class="menu-fixed-price" style="font-size: 1.1em;">30 TL</span>
+                </div>
+
+                <div class="menu-fixed-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 5px;">
+                    <h4 style="margin:0; font-size: 1.1em;">Ayran</h4>
+                    <span class="menu-fixed-price" style="font-size: 1.1em;">25 TL</span>
+                </div>
+
+                <div class="menu-fixed-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 5px;">
+                    <h4 style="margin:0; font-size: 1.1em;">Ice Tea</h4>
+                    <span class="menu-fixed-price" style="font-size: 1.1em;">70 TL</span>
+                </div>
+
+
+                <div class="menu-fixed-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: none; padding-bottom: 0;">
+                    <h4 style="margin:0; font-size: 1.1em;">Su</h4>
+                    <span class="menu-fixed-price" style="font-size: 1.1em;">10 TL</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <div class="allergy-info">
+    <div class="allergy-box">
+        <div class="allergy-icon">i</div>
+        <p>Herhangi bir gıda alerjiniz varsa lütfen ekibimizle irtibata geçiniz.</p>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2 class="footer-logo">PIZZA <span>HSN</span></h2>
+            <p class="footer-desc">Lezzetin en sıcak adresi. En taze malzemelerle, usta ellerden çıkan gerçek pizza keyfi.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>İletişim</h3>
+            <p>📞 0544 834 64 43</p>
+            <p>📍 Gazikemal Mah. Kumtaş Cad. Kız Meslek Lisesi Karşısı A101 yanı Gediz/KÜTAHYA</p>
+            <p>🕒 11:00 - 21:00</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Takip Et</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/pizzahsn?igsh=MTVzajBlbWt2cHdiYg==" target="_blank">Instagram</a>
+                <a href="https://wa.me/905448346443">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Pizza Hsn - Tüm Hakları Saklıdır.
+    </div>
+</footer>
+
+</body>
+</html>
