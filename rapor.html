@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pizza HSN Ciro | CETINWEB</title>
+
+<link rel="stylesheet" href="rapor.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+    <div class="top-left">
+
+        <div class="logo-box">
+
+            <div class="logo-icon">
+                🍕
+            </div>
+
+            <div class="logo-text">
+
+                <h1>
+                    Pizza HSN
+                </h1>
+
+                <span>
+                    Made By CETİNWEB
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="top-right">
+
+        <div class="live-status">
+
+            <div class="dot"></div>
+
+            Sistem Aktif
+
+        </div>
+
+        <div class="clock-box">
+
+            <span id="live-time">
+                22:45
+            </span>
+
+        </div>
+
+        <a href="admin.html"
+        class="back-btn">
+
+            ← POS Paneli
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- HERO -->
+
+<div class="hero-card">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-left">
+
+        <small id="report-title">
+            BUGÜNKÜ TOPLAM CİRO
+        </small>
+
+        <h1 id="total-sales">
+            0 TL
+        </h1>
+
+<p id="report-desc">
+    Günlük PİZZHSN satış performansı
+</p>
+
+    </div>
+
+
+
+    <div class="hero-right">
+
+        <div class="hero-mini-card">
+
+            <span>
+                💵 Nakit
+            </span>
+
+            <strong id="cash-sales">
+                0 TL
+            </strong>
+
+        </div>
+
+
+
+        <div class="hero-mini-card">
+
+            <span>
+                💳 Kart
+            </span>
+
+            <strong id="card-sales">
+                0 TL
+            </strong>
+
+        </div>
+
+
+
+        <div class="hero-mini-card">
+
+            <span>
+                📦 Sipariş
+            </span>
+
+            <strong id="order-count">
+                0
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- RAPOR TABS -->
+
+<div class="report-tabs">
+
+    <button class="report-tab active"
+    data-range="daily">
+
+        Günlük
+
+    </button>
+
+    <button class="report-tab"
+    data-range="weekly">
+
+        Haftalık
+
+    </button>
+
+    <button class="report-tab"
+    data-range="monthly">
+
+        Aylık
+
+    </button>
+
+    <button class="report-tab"
+    data-range="yearly">
+
+        Yıllık
+
+    </button>
+
+<div class="date-filter">
+
+    <input type="date"
+    id="start-date">
+
+    <span>—</span>
+
+    <input type="date"
+    id="end-date">
+
+    <button id="filter-btn">
+
+        Filtrele
+
+    </button>
+
+</div>
+
+</div>
+
+
+
+<!-- ALT GRID -->
+
+<div class="bottom-grid">
+
+
+    <!-- SON SATIŞLAR -->
+
+    <div class="sales-panel">
+
+        <div class="panel-header">
+
+            <div>
+
+                <small>
+                    CANLI
+                </small>
+
+                <h3>
+                    Son Satışlar
+                </h3>
+
+            </div>
+
+            <span>
+                Pizza HSN
+            </span>
+
+        </div>
+
+
+
+        <div class="sales-list">
+
+            <div class="sale-item">
+
+                <div class="sale-left">
+
+                    <strong>
+                        Masa 4
+                    </strong>
+
+                    <span>
+                        Kart Ödeme • 22:15
+                    </span>
+
+                </div>
+
+                <h4>
+                    450 TL
+                </h4>
+
+            </div>
+
+
+
+            <div class="sale-item">
+
+                <div class="sale-left">
+
+                    <strong>
+                        Masa 2
+                    </strong>
+
+                    <span>
+                        Nakit Ödeme • 22:11
+                    </span>
+
+                </div>
+
+                <h4>
+                    300 TL
+                </h4>
+
+            </div>
+
+
+
+            <div class="sale-item">
+
+                <div class="sale-left">
+
+                    <strong>
+                        Sipariş 1
+                    </strong>
+
+                    <span>
+                        Kart Ödeme • 21:58
+                    </span>
+
+                </div>
+
+                <h4>
+                    870 TL
+                </h4>
+
+            </div>
+
+
+
+            <div class="sale-item">
+
+                <div class="sale-left">
+
+                    <strong>
+                        Masa 6
+                    </strong>
+
+                    <span>
+                        Nakit Ödeme • 21:41
+                    </span>
+
+                </div>
+
+                <h4>
+                    380 TL
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SİSTEM -->
+
+    <div class="system-panel">
+
+        <div class="panel-header">
+
+            <div>
+
+                <small>
+                    DURUM
+                </small>
+
+                <h3>
+                    Sistem
+                </h3>
+
+            </div>
+
+            <span>
+                Online
+            </span>
+
+        </div>
+
+
+
+        <div class="system-item">
+
+            <span>
+                Firebase
+            </span>
+
+            <strong>
+                Aktif
+            </strong>
+
+        </div>
+
+
+
+        <div class="system-item">
+
+            <span>
+                POS Sistemi
+            </span>
+
+            <strong>
+                Çalışıyor
+            </strong>
+
+        </div>
+
+
+
+        <div class="system-item">
+
+            <span>
+                Canlı Veri
+            </span>
+
+            <strong>
+                Senkronize
+            </strong>
+
+        </div>
+
+
+
+        <div class="system-item">
+
+            <span>
+                Fiş Sistemi
+            </span>
+
+            <strong>
+                Hazır
+            </strong>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ALT BUTON -->
+
+<div class="bottom-actions">
+
+    <button id="reset-sales-btn">
+
+        🗑 Tüm Ciroyu Sıfırla
+
+    </button>
+
+    <button id="pdf-btn">
+
+    📄 PDF Çıktı Al
+
+</button>
+
+</div>
+
+
+
+<script type="module" src="rapor.js"></script>
+
+</body>
+</html>

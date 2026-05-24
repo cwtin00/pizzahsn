@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:white;
+    font-family:Arial,sans-serif;
+
+    width:80mm;
+
+    margin:auto;
+
+    padding:5px;
+}
+
+.receipt{
+    width:100%;
+}
+
+h1{
+    text-align:center;
+
+    font-size:22px;
+
+    margin-bottom:8px;
+}
+
+.receipt-info{
+    text-align:center;
+
+    margin-bottom:10px;
+
+    font-size:16px;
+}
+
+.line{
+    border-top:1px dashed black;
+
+    margin:10px 0;
+}
+
+.item{
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:6px;
+
+    font-size:14px;
+}
+
+.total{
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-top:10px;
+}
+
+.payment-type{
+    text-align:center;
+
+    margin-top:15px;
+
+    font-size:18px;
+
+    font-weight:bold;
+}
+
+.date{
+    text-align:center;
+
+    margin-top:10px;
+
+    font-size:14px;
+}
+
+
+@media print{
+
+    body{
+        width:80mm;
+    }
+
+}
+
+@page{
+    size:80mm auto;
+    margin:0;
+}
