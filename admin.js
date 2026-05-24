@@ -392,19 +392,25 @@ function renderCart(){
 
             <div class="order-right">
 
-                <div class="qty-controls">
+<div class="qty-controls">
 
-                    <button onclick="decreaseQty(${index})">
-                        -
-                    </button>
+    <button onclick="decreaseQty(${index})">
+        -
+    </button>
 
-                    <span>${item.qty}</span>
+    <span>${item.qty}</span>
 
-                    <button onclick="increaseQty(${index})">
-                        +
-                    </button>
+    <button onclick="increaseQty(${index})">
+        +
+    </button>
 
-                </div>
+    <button onclick="changePrice(${index})">
+
+        💰
+
+    </button>
+
+</div>
 
                 <strong>
                     ${item.price * item.qty} TL
@@ -454,7 +460,42 @@ window.increaseQty = function(index){
 
 }
 
+window.changePrice = function(index){
 
+    const cart =
+    tableOrders[currentTable];
+
+    const newPrice =
+    prompt(
+        "Yeni fiyat gir",
+        cart[index].price
+    );
+
+    if(!newPrice){
+
+        return;
+
+    }
+
+const parsedPrice =
+parseInt(newPrice);
+
+if(isNaN(parsedPrice) || parsedPrice < 0){
+
+    alert("Geçerli fiyat gir");
+
+    return;
+
+}
+
+cart[index].price =
+parsedPrice;
+
+    renderCart();
+
+    saveOrders();
+
+}
 
 
 // MİKTAR AZALT
