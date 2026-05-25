@@ -461,6 +461,13 @@ export const products = [
 {
     category:"İçecek",
     group:"İçecek",
+    name:"Şişe Cola",
+    price:60
+},
+
+{
+    category:"İçecek",
+    group:"İçecek",
     name:"1 Litre Cola",
     price:90
 },
