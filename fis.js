@@ -28,6 +28,9 @@ params.get("total");
 const payment =
 params.get("payment");
 
+const note =
+params.get("note");
+
 const items =
 JSON.parse(
     decodeURIComponent(
@@ -63,6 +66,37 @@ items.forEach(item=>{
     `;
 
 });
+
+
+// NOT / ADRES
+
+if(note){
+
+    receiptItems.innerHTML += `
+
+    <div class="line"></div>
+
+    <div class="item">
+
+        <span>
+            Sipariş Notu
+        </span>
+
+    </div>
+
+    <div style="
+        margin-top:8px;
+        font-size:14px;
+        word-break:break-word;
+    ">
+
+        ${note}
+
+    </div>
+
+    `;
+
+}
 
 
 // TOPLAM

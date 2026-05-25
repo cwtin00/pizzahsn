@@ -63,6 +63,9 @@ document.querySelector(".cash-btn");
 const cardBtn =
 document.querySelector(".card-btn");
 
+const orderNote =
+document.querySelector(".order-note");
+
 const printBtn =
 document.querySelector(".print-btn");
 
@@ -740,14 +743,20 @@ printBtn.addEventListener("click",()=>{
         JSON.stringify(cart)
     );
 
-    window.open(
+    const encodedNote =
+encodeURIComponent(
+    orderNote.value
+);
 
-        `fis.html?table=${currentTable}
-        &total=${total}
-        &items=${encodedItems}`,
+window.open(
 
-        "_blank"
+    `fis.html?table=${currentTable}
+    &total=${total}
+    &items=${encodedItems}
+    &note=${encodedNote}`,
 
-    );
+    "_blank"
+
+);
 
 });
