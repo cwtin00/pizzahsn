@@ -100,16 +100,7 @@ if(note){
 receiptTotal.innerText =
 total + " TL";
 
-
-// ÖDEME TİPİ
-
-paymentType.innerText =
-payment === "cash"
-?
-"Nakit Ödeme"
-:
-"Kart Ödeme";
-
+paymentType.innerText = "";
 
 // TARİH
 
