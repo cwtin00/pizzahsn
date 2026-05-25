@@ -84,11 +84,7 @@ if(note){
 
     </div>
 
-    <div style="
-        margin-top:8px;
-        font-size:14px;
-        word-break:break-word;
-    ">
+    <div class="note">
 
         ${note}
 
