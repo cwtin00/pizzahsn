@@ -389,6 +389,14 @@ function loadSales(){
 
                 }
 
+                if(sale.type === "mixed"){
+
+                  cashSales += sale.cash || 0;
+
+                cardSales += sale.card || 0;
+
+                }
+
             });
 
 
@@ -419,11 +427,15 @@ function loadSales(){
 
                         <span>
                             ${
-                                sale.type === "cash"
-                                ?
-                                "Nakit Ödeme"
-                                :
-                                "Kart Ödeme"
+                            sale.type === "cash"
+                            ?
+                            "Nakit Ödeme"
+                            :
+                            sale.type === "card"
+                            ?
+                            "Kart Ödeme"
+                            :
+                            "Parçalı Ödeme"
                             }
 
                             • ${time}
