@@ -63,6 +63,9 @@ document.querySelector(".cash-btn");
 const cardBtn =
 document.querySelector(".card-btn");
 
+const mixedBtn =
+document.querySelector(".mixed-btn");
+
 const orderNote =
 document.querySelector(".order-note");
 
@@ -689,6 +692,96 @@ cashBtn.addEventListener("click",()=>{
 cardBtn.addEventListener("click",()=>{
 
     completePayment("card");
+
+});
+
+mixedBtn.addEventListener("click",()=>{
+
+    if(!currentTable){
+
+        return;
+
+    }
+
+    const cart =
+    tableOrders[currentTable] || [];
+
+    if(cart.length <= 0){
+
+        return;
+
+    }
+
+    let total = 0;
+
+    cart.forEach(item=>{
+
+        total += item.price * item.qty;
+
+    });
+
+    const cardAmount =
+    parseInt(
+        prompt("Kart ödemesi kaç TL?")
+    );
+
+    if(isNaN(cardAmount) || cardAmount < 0){
+
+        alert("Geçerli tutar gir");
+
+        return;
+
+    }
+
+    if(cardAmount > total){
+
+        alert("Kart tutarı toplamdan büyük olamaz");
+
+        return;
+
+    }
+
+    const cashAmount =
+    total - cardAmount;
+
+    const salesRef =
+    ref(db,"sales/" + Date.now());
+
+    set(salesRef,{
+
+        table:currentTable,
+
+        total:total,
+
+        type:"mixed",
+
+        card:cardAmount,
+
+        cash:cashAmount,
+
+        items:cart,
+
+        date:new Date().toISOString()
+
+    });
+
+    alert(
+
+        "Kart: " +
+        cardAmount +
+        " TL\nNakit: " +
+        cashAmount +
+        " TL"
+
+    );
+
+    tableOrders[currentTable] = [];
+
+    renderCart();
+
+    updateTableStatus();
+
+    saveOrders();
 
 });
 

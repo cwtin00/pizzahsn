@@ -682,3 +682,35 @@ body{
     font-size:15px;
 
 }
+
+.mixed-btn{
+
+    width:100%;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:linear-gradient(135deg,#7c3aed,#4f46e5);
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.mixed-btn:hover{
+
+    transform:scale(1.02);
+
+    opacity:0.95;
+
+}
