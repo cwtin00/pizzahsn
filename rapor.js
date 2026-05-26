@@ -106,27 +106,45 @@ function getEsnafDateStringFromMs(ms) {
 }
 
 // TARİH KONTROL FONKSİYONU (Kayıtların Firebase anahtarındaki milisaniyeyi veya sale.date'i kullanır)
-function isInRange(saleKey, saleDateStr){
-    // Eğer saleKey geçerli bir milisaniye ise onu baz al, yoksa date string'e dön
-    const timestamp = isNaN(Number(saleKey)) ? new Date(saleDateStr).getTime() : Number(saleKey);
-    
+// TARİH KONTROL FONKSİYONU (Kayıtların Firebase anahtarındaki milisaniyeyi veya sale.date'i kullanır)
+function isInRange(saleKey, saleDateStr) {
+    let timestamp;
+
+    // 1. ADIM: Firebase Key Milisaniye mi? (En güvenli yöntem)
+    if (!isNaN(Number(saleKey)) && String(saleKey).length >= 12) {
+        timestamp = Number(saleKey);
+    } 
+    // 2. ADIM: Key sayı değilse sale.date string'ini parse et
+    else if (saleDateStr) {
+        // Eğer ISO string (T harfi veya boşluk içerir) ise direkt parse et
+        if (saleDateStr.includes("T") || saleDateStr.includes(" ")) {
+            timestamp = new Date(saleDateStr).getTime();
+        } else {
+            // Eğer "YYYY-MM-DD" ise öğle 12:00'ye sabitle (UTC saat farkı hatasını önler)
+            const [year, month, day] = saleDateStr.split("-").map(Number);
+            timestamp = new Date(year, month - 1, day, 12, 0, 0).getTime();
+        }
+    } else {
+        return false;
+    }
+
     const saleEsnafDateStr = getEsnafDateStringFromMs(timestamp);
     const todayEsnafDateStr = getEsnafDateStringFromMs(Date.now());
 
     // KULLANICININ TAKVİMDEN SEÇTİĞİ TARİH (ÖZEL FİLTRE)
-    if(customFilter){
+    if (customFilter) {
         const startStr = startDateInput.value; // "YYYY-MM-DD"
         const endStr = endDateInput.value;     // "YYYY-MM-DD"
         return saleEsnafDateStr >= startStr && saleEsnafDateStr <= endStr;
     }
 
     // GÜNLÜK SEKMESİ (BUGÜNKÜ CİRO)
-    if(currentRange === "daily"){
+    if (currentRange === "daily") {
         return saleEsnafDateStr === todayEsnafDateStr;
     }
 
     // HAFTALIK FİLTRE
-    if(currentRange === "weekly"){
+    if (currentRange === "weekly") {
         const saleEsnafObj = new Date(saleEsnafDateStr);
         const todayEsnafObj = new Date(todayEsnafDateStr);
         const diff = todayEsnafObj - saleEsnafObj;
@@ -135,14 +153,14 @@ function isInRange(saleKey, saleDateStr){
     }
 
     // AYLIK FİLTRE
-    if(currentRange === "monthly"){
+    if (currentRange === "monthly") {
         const saleEsnafObj = new Date(saleEsnafDateStr);
         const todayEsnafObj = new Date(todayEsnafDateStr);
         return saleEsnafObj.getMonth() === todayEsnafObj.getMonth() && saleEsnafObj.getFullYear() === todayEsnafObj.getFullYear();
     }
 
     // YILLIK FİLTRE
-    if(currentRange === "yearly"){
+    if (currentRange === "yearly") {
         const saleEsnafObj = new Date(saleEsnafDateStr);
         const todayEsnafObj = new Date(todayEsnafDateStr);
         return saleEsnafObj.getFullYear() === todayEsnafObj.getFullYear();
