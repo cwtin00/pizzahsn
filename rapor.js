@@ -205,43 +205,45 @@ function loadSales(){
             });
 
             // SON 5 SATIŞI LİSTELE
-            const filteredEntries = salesEntries.filter(([key, sale]) => sale.date && isInRange(key, sale.date));
-            
-            filteredEntries.slice(0, 5).forEach(([key, sale]) => {
-                // Kayıt zaman damgasından yerel saati alıyoruz
-                const timestamp = isNaN(Number(key)) ? new Date(sale.date).getTime() : Number(key);
-                const time = new Date(timestamp).toLocaleTimeString("tr-TR", {
-                    hour: "2-digit",
-                    minute: "2-digit"
-                });
+// SON 5 SATIŞI LİSTELE (KONTROLLÜ)
+const filteredEntries = salesEntries.filter(([key, sale]) => sale.date && isInRange(key, sale.date));
 
-                salesList.innerHTML += `
-                <div class="sale-item">
-                    <div class="sale-left">
-                        <strong>${sale.table}</strong>
-                        <span>
-                            ${
-                            sale.type === "cash"
-                            ? "Nakit Ödeme"
-                            : sale.type === "card"
-                            ? "Kart Ödeme"
-                            : "Parçalı Ödeme"
-                            }
-                            • ${time}
-                        </span>
-                    </div>
-                    <div class="sale-actions">
-                        <h4>${sale.total} TL</h4>
-                        <button 
-                            class="print-sale-btn"
-                            onclick='reprintReceipt(${JSON.stringify(sale)})'
-                        >
-                            🖨 Yazdır
-                        </button>
-                    </div>
-                </div>
-                `;
-            });
+filteredEntries.slice(0, 5).forEach(([key, sale]) => {
+    // BURASI GÜNCELLENDİ: Artık isInRange ile aynı mantıkla güvenli timestamp alıyoruz
+    let timestamp;
+    if (!isNaN(Number(key)) && String(key).length >= 12) {
+        timestamp = Number(key);
+    } else if (sale.date) {
+        // Tarih formatı ne olursa olsun güvenli şekilde alıyoruz
+        timestamp = new Date(sale.date).getTime();
+    } else {
+        timestamp = Date.now();
+    }
+    
+    // Artık saatlerimiz de hatasız ve doğru
+    const time = new Date(timestamp).toLocaleTimeString("tr-TR", {
+        hour: "2-digit",
+        minute: "2-digit"
+    });
+
+    salesList.innerHTML += `
+    <div class="sale-item">
+        <div class="sale-left">
+            <strong>${sale.table}</strong>
+            <span>
+                ${sale.type === "cash" ? "Nakit Ödeme" : sale.type === "card" ? "Kart Ödeme" : "Parçalı Ödeme"}
+                • ${time}
+            </span>
+        </div>
+        <div class="sale-actions">
+            <h4>${sale.total} TL</h4>
+            <button class="print-sale-btn" onclick='reprintReceipt(${JSON.stringify(sale)})'>
+                🖨 Yazdır
+            </button>
+        </div>
+    </div>
+    `;
+});
         }
 
         // PANEL METİNLERİNİ GÜNCELLE
