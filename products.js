@@ -12,17 +12,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:200
-        },
-
-        {
-            size:"Orta",
             price:250
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:300
+        },
+
+        {
+            size:"Büyük",
+            price:350
         }
     ]
 },
@@ -35,17 +35,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:200
-        },
-
-        {
-            size:"Orta",
             price:250
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:300
+        },
+
+        {
+            size:"Büyük",
+            price:350
         }
     ]
 },
@@ -58,17 +58,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:200
-        },
-
-        {
-            size:"Orta",
             price:250
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:300
+        },
+
+        {
+            size:"Büyük",
+            price:350
         }
     ]
 },
@@ -81,17 +81,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:200
-        },
-
-        {
-            size:"Orta",
             price:250
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:300
+        },
+
+        {
+            size:"Büyük",
+            price:350
         }
     ]
 },
@@ -104,17 +104,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:200
-        },
-
-        {
-            size:"Orta",
             price:250
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:300
+        },
+
+        {
+            size:"Büyük",
+            price:350
         }
     ]
 },
@@ -132,17 +132,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:250
-        },
-
-        {
-            size:"Orta",
             price:300
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:350
+        },
+
+        {
+            size:"Büyük",
+            price:400
         }
     ]
 },
@@ -155,17 +155,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:250
-        },
-
-        {
-            size:"Orta",
             price:300
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:350
+        },
+
+        {
+            size:"Büyük",
+            price:400
         }
     ]
 },
@@ -178,17 +178,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:250
-        },
-
-        {
-            size:"Orta",
             price:300
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:350
+        },
+
+        {
+            size:"Büyük",
+            price:400
         }
     ]
 },
@@ -201,17 +201,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:250
-        },
-
-        {
-            size:"Orta",
             price:300
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:350
+        },
+
+        {
+            size:"Büyük",
+            price:400
         }
     ]
 },
@@ -224,17 +224,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:250
-        },
-
-        {
-            size:"Orta",
             price:300
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:350
+        },
+
+        {
+            size:"Büyük",
+            price:400
         }
     ]
 },
@@ -252,17 +252,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:350
-        },
-
-        {
-            size:"Orta",
             price:400
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:450
+        },
+
+        {
+            size:"Büyük",
+            price:500
         }
     ]
 },
@@ -275,17 +275,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:350
-        },
-
-        {
-            size:"Orta",
             price:400
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:450
+        },
+
+        {
+            size:"Büyük",
+            price:500
         }
     ]
 },
@@ -298,17 +298,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:350
-        },
-
-        {
-            size:"Orta",
             price:400
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:450
+        },
+
+        {
+            size:"Büyük",
+            price:500
         }
     ]
 },
@@ -321,17 +321,17 @@ export const products = [
     sizes:[
         {
             size:"Küçük",
-            price:350
-        },
-
-        {
-            size:"Orta",
             price:400
         },
 
         {
-            size:"Büyük",
+            size:"Orta",
             price:450
+        },
+
+        {
+            size:"Büyük",
+            price:500
         }
     ]
 },
@@ -346,7 +346,7 @@ export const products = [
     group:"Menüler",
     menuType:"Küçük Boy",
     name:"Solo Menü",
-    price:300
+    price:400
 },
 
 {
@@ -354,7 +354,7 @@ export const products = [
     group:"Menüler",
     menuType:"Küçük Boy",
     name:"Mix Menü",
-    price:450
+    price:580
 },
 
 {
@@ -362,7 +362,7 @@ export const products = [
     group:"Menüler",
     menuType:"Orta Boy",
     name:"King Menü",
-    price:350
+    price:450
 },
 
 {
@@ -370,7 +370,7 @@ export const products = [
     group:"Menüler",
     menuType:"Orta Boy",
     name:"Mega Menü",
-    price:500
+    price:630
 },
 
 {
@@ -378,7 +378,7 @@ export const products = [
     group:"Menüler",
     menuType:"Büyük Boy",
     name:"Extreme Menü",
-    price:400
+    price:500
 },
 
 {
@@ -386,7 +386,7 @@ export const products = [
     group:"Menüler",
     menuType:"Büyük Boy",
     name:"Süper Menü",
-    price:550
+    price:680
 },
 
 {
@@ -394,7 +394,7 @@ export const products = [
     group:"Menüler",
     menuType:"İkili Menü",
     name:"Ekonomik Menü",
-    price:550
+    price:670
 },
 
 {
@@ -402,7 +402,7 @@ export const products = [
     group:"Menüler",
     menuType:"İkili Menü",
     name:"Trend Menü",
-    price:770
+    price:950
 },
 
 {
@@ -410,7 +410,7 @@ export const products = [
     group:"Menüler",
     menuType:"İkili Menü",
     name:"Elite Menü",
-    price:870
+    price:1050
 },
 
 
@@ -422,28 +422,28 @@ export const products = [
     category:"Çıtır",
     group:"Çıtır",
     name:"Cips 1 Pors.",
-    price:70
+    price:100
 },
 
 {
     category:"Çıtır",
     group:"Çıtır",
     name:"Soğan Halkası 1 Pors.",
-    price:70
-},
-
-{
-    category:"Çıtır",
-    group:"Çıtır",
-    name:"Nugget 1 Pors.",
     price:80
 },
 
 {
     category:"Çıtır",
     group:"Çıtır",
+    name:"Nugget 1 Pors.",
+    price:90
+},
+
+{
+    category:"Çıtır",
+    group:"Çıtır",
     name:"Çıtır Tavuk 1 Pors.",
-    price:150
+    price:200
 },
 
 
@@ -454,36 +454,50 @@ export const products = [
 {
     category:"İçecek",
     group:"İçecek",
-    name:"Coca Cola",
-    price:70
+    name:"Coca Cola (330ml)",
+    price:80
 },
 
 {
     category:"İçecek",
     group:"İçecek",
     name:"Şişe Cola",
-    price:60
+    price:70
 },
 
 {
     category:"İçecek",
     group:"İçecek",
     name:"1 Litre Cola",
-    price:90
+    price:100
 },
 
 {
     category:"İçecek",
     group:"İçecek",
-    name:"Fanta",
-    price:70
+    name:"Pepsi (330ml)",
+    price:80
 },
 
 {
     category:"İçecek",
     group:"İçecek",
-    name:"Sprite",
-    price:70
+    name:"Pepsi (1Lt)",
+    price:100
+},
+
+{
+    category:"İçecek",
+    group:"İçecek",
+    name:"Fanta (330ml)",
+    price:80
+},
+
+{
+    category:"İçecek",
+    group:"İçecek",
+    name:"Sprite (330ml)",
+    price:80
 },
 
 {
@@ -497,21 +511,21 @@ export const products = [
     category:"İçecek",
     group:"İçecek",
     name:"Ayran",
-    price:25
+    price:30
 },
 
 {
     category:"İçecek",
     group:"İçecek",
-    name:"Ice Tea",
-    price:70
+    name:"Ice Tea (330ml)",
+    price:80
 },
 
 {
     category:"İçecek",
     group:"İçecek",
     name:"Su",
-    price:10
+    price:15
 }
 
 ];
