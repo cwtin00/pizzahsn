@@ -421,7 +421,7 @@ export const products = [
 {
     category:"Çıtır",
     group:"Çıtır",
-    name:"Patates Kızartması 1 Pors. (250gr)",
+    name:"Patates Kızartması 1 Pors.",
     price:100
 },
 
